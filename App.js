@@ -10,7 +10,7 @@ const App: () => React$Node = () => {
 
   return (
     <>
-    <DestinationSearch/>
+    <SearchResult/>
     </>
   );
 };
