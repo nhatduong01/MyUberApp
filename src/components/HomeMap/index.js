@@ -1,12 +1,10 @@
 import React from "react";
 
-import { View, Text } from "react-native";
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import { View, Text, Image } from "react-native";
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 const HomeMap = (props) =>
 {
     return(
-        <View style = {{height : 270, backgroundColor : "#4e9636", 
-        justifyContent: 'center', alignItems:'center'}}>
                     <MapView
             style = {{height : '100%', width : '100%'}}
             provider = {PROVIDER_GOOGLE}
@@ -16,8 +14,15 @@ const HomeMap = (props) =>
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
             }}
-  />
-        </View>
+            >
+                <Marker
+                coordinate={{ latitude : 37.78825 , longitude : -122.4324 }}
+                >
+                    <Image source = {require  ('../../assets/Comfort.png')}
+                    style = {{height : 30 , width : 30, resizeMode : "contain"}}/>
+                    </Marker>
+                </MapView>
+
     );
 };
 export default HomeMap;

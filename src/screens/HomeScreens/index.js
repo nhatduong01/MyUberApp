@@ -6,7 +6,9 @@ import Homesearch from "../../components/HomeSearch/homesearch";
 const HomeScreen = (props) => {
   return (
     <View>
-        <HomeMap/>
+            <View style = {{height : Dimensions.get('window').height - 380}}>
+            <HomeMap/>
+            </View>
         <CovidMessage/>
         <Homesearch/>
     </View>
