@@ -1,15 +1,12 @@
 import React from "react";
 
 import { View, Text } from "react-native";
-
+//import MapView from 'react-native-maps';
 const HomeMap = (props) =>
 {
     return(
-        <View style = {{height : 400, backgroundColor : "#4e9636", 
+        <View style = {{height : 270, backgroundColor : "#4e9636", 
         justifyContent: 'center', alignItems:'center'}}>
-            <Text>
-                I am a map
-            </Text>
         </View>
     );
 };

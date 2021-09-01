@@ -4,14 +4,13 @@ import { StatusBar } from 'react-native';
 
 
 import Homescreen from './src/screens/HomeScreens';
-
-
-const App: () => Node = () => {
+import DestinationSearch from './src/screens/DetinationSearch/destinationSearch';
+import SearchResult from './src/screens/OrderUber/chooseUber';
+const App: () => React$Node = () => {
 
   return (
     <>
-    <StatusBar barStyle = "dark-content"/>
-    <Homescreen/>
+    <DestinationSearch/>
     </>
   );
 };
